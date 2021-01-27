@@ -3,7 +3,7 @@ def badge_maker(name)
   "Hello, my name is #{name}."
 end
 
-# Creates Badge Message for array of names
+# Returns array of badge messages
 def batch_badge_creator (name_array)
   badge_new_array=[]
   name_array.each do |name|
@@ -24,6 +24,12 @@ end
 
 # Tells printer what to print
 def printer
-  print batch_badge_creator(name_array)
-  print assign_rooms(name_array)
+  name_array.each do |name|
+    puts batch_badge_creator(name_array)
+  end
+
+  name_array.each do |name|
+    puts assign_rooms(name_array)
+  end
+
 end
