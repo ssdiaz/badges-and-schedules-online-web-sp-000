@@ -28,7 +28,7 @@ def printer(name_array)
   #  puts batch_badge_creator(name_array)
   #end
 
-  puts batch_badge_creator(name_array).inspect
+  puts batch_badge_creator(name_array)
 
   name_array.each do |name|
     puts assign_rooms(name_array)
