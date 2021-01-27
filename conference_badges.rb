@@ -33,8 +33,8 @@ end
 def assign_rooms(speaker_list)
   #speaker_list.map do |name|
     speaker_list.each_with_index.map do |name, room_num|
-      room_num = room_num + 1
-      "Hello, #{name}! You'll be assigned to room #{room_num}!"
+    #  room_num = room_num + 1
+      "Hello, #{name}! You'll be assigned to room #{room_num+1}!"
 
   end
 end
