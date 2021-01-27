@@ -18,6 +18,7 @@ def assign_rooms (speaker_array)
   speaker_array.each_with_index { |speaker, room_num|
       room_num = 1
       room_new_array << "Hello, #{speaker}! You'll be assigned to room #{room_num}!"
+      room_num += 1
   }
 
     room_new_array
