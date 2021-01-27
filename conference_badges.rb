@@ -30,9 +30,9 @@ end
   #      room_new_array
   #  end
 #SECOND TRY
-def assign_rooms(name_array)
-  name_array.map do |name|
-    name_array.each_with_index { |name, room_num|
+def assign_rooms(speaker_list)
+  speaker_list.map do |name|
+    speaker_list.each_with_index { |name, room_num|
       room_num = room_num + 1
       room_new_array << "Hello, #{name}! You'll be assigned to room #{room_num}!"
     }
