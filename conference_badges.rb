@@ -24,6 +24,6 @@ end
 
 # Tells printer what to print
 def printer
-  prints batch_badge_creator
+  print batch_badge_creator
 assign_rooms
 end
