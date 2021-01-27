@@ -12,13 +12,18 @@ def batch_badge_creator (name_array)
     badge_new_array
 end
 
-# Takes list of speaker and assigns a room
-def assign_rooms (speaker_array)
+# Takes list of speaker and assigns a room number
+def assign_rooms (name_array)
   room_new_array = []
-  speaker_array.each_with_index { |speaker, room_num|
+  name_array.each_with_index { |name, room_num|
       room_num = room_num + 1
-      room_new_array << "Hello, #{speaker}! You'll be assigned to room #{room_num}!"
+      room_new_array << "Hello, #{name} You'll be assigned to room #{room_num}!"
   }
-
     room_new_array
+end
+
+# Tells printer what to print
+def printer
+
+
 end
