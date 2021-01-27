@@ -44,12 +44,12 @@ end
 
 
 # Prints out both arrays above
-def printer(name_array)
-  batch_badge_creator(name_array).each do |name|
+def printer(speaker_list)
+  batch_badge_creator(speaker_list).each do |name|
     puts name
   end
 
-  assign_rooms(name_array).each do |name|
+  assign_rooms(speaker_list).each do |name|
     puts name
   end
 end
