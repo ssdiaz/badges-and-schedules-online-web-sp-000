@@ -13,8 +13,8 @@ end
   #      badge_new_array
   #  end
 #SECOND TRY:
-def batch_badge_creator(name_array)
-  name_array.map do |name|
+def batch_badge_creator(speaker_list)
+  speaker_list.map do |name|
     badge_maker(name)
   end
 end
