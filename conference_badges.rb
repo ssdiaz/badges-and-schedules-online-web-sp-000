@@ -13,7 +13,7 @@ def batch_badge_creator (name_array)
 end
 
 # Takes list of speaker and assigns a room
-def assign_rooms (speaker)
+def assign_rooms (speaker_array)
 # 7 rooms
   room_new_array = []
   speaker_array.each_with_index { |speaker, room_num|
