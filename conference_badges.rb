@@ -25,7 +25,7 @@ end
 # Tells printer what to print
 def printer(name_array)
   batch_badge_creator(name_array).each do |name|
-    print name
+    puts name
   end
 
   batch_badge_creator(name_array).each do |name|
