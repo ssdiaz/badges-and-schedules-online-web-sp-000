@@ -20,5 +20,5 @@ def assign_rooms (speaker_array)
     puts "Hello, #{speaker}! You'll be assigned to room #{room_num}!"
   }
     room_new_array << speaker_array
-  end
+#  end
 end
