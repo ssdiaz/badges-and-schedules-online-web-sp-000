@@ -1,4 +1,4 @@
-# Badge Message for name
+# Badge Message for name; returns a string
 def badge_maker(name)
   "Hello, my name is #{name}."
 end
@@ -12,7 +12,7 @@ def batch_badge_creator (name_array)
     badge_new_array
 end
 
-# Takes list of speaker and assigns a room number
+# Takes list of speaker and assigns a room number; returns an array
 def assign_rooms (name_array)
   room_new_array = []
   name_array.each_with_index { |name, room_num|
@@ -28,9 +28,9 @@ def printer(name_array)
   #  puts batch_badge_creator(name_array)
   #end
 
-  puts batch_badge_creator(name_array)
+  puts batch_badge_creator(name_array).inspect
 
-  puts assign_rooms(name_array)
+  puts assign_rooms(name_array).inspect
 
 #  name_array.each do |name|
   #  puts assign_rooms(name_array)
