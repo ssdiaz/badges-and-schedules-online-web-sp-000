@@ -32,8 +32,8 @@ def printer(name_array)
 
 #  puts assign_rooms(name_array).inspect
 
-  name_array.each do |name|
-    puts assign_rooms(name_array)
+  batch_badge_creator(name_array).each do |name|
+    puts name
   end
 
 end
