@@ -5,14 +5,14 @@ end
 
 # Returns array of badge messages
 #FIRST TRY:
-def batch_badge_creator(name_array)
-  badge_new_array=[]
-  name_array.each do |name|
-    badge_new_array << badge_maker(name)
-  end
-    badge_new_array
-end
-
+#  def batch_badge_creator(name_array)
+#    badge_new_array=[]
+#    name_array.each do |name|
+#      badge_new_array << badge_maker(name)
+#    end
+#      badge_new_array
+#  end
+#SECOND TRY:
 def batch_badge_creator(name_array)
   name_array.map do |name|
     badge_maker(name)
